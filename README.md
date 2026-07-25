@@ -58,8 +58,9 @@ chmod +x *.sh
 主要配置文件位于 `/etc/openwrt-epg-sync/config.conf`（或根据你实际的项目路径）：
 
 ```ini
+
 # EPG 数据源链接 / EPG Source URL
-EPG_SOURCE_URL="[http://example.com/epg.xml](http://example.com/epg.xml)"
+EPG_SOURCE_URL="http://example.com/epg.xml"
 
 # 输出保存路径 / Output Path
 OUTPUT_PATH="/www/epg.xml"
