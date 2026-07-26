@@ -121,6 +121,19 @@ LOG_RETENTION_DAYS=7
 
 ---
 
+## 🙏 鸣谢 | Acknowledgements
+
+本项目本身不托管、不修改、不分发任何受版权保护的电视节目流或 EPG 数据。核心功能仅为提供一个自动化的同步与数据转换环境。
+
+特别感谢以下开源/免费的 EPG 数据源提供者，没有他们的无私奉献，本项目将无法正常运作：
+
+* **112114 EPG** ([epg.112114.xyz](https://epg.112114.xyz/)) - 提供高质量、高精度的中文 EPG 节目单数据。
+* **Fanmingming EPG** ([GitHub Raw](https://raw.githubusercontent.com/fanmingming/live)) - 提供丰富且持续维护的 Live/EPG 规则与列表。
+* **Yang-1989 EPG** ([GitHub Raw](https://raw.githubusercontent.com/Yang-1989/m3u)) - 提供全面且实用的 IPTV EPG 资源支持。
+
+> **⚠️ 免责声明 (Disclaimer)**：请用户在使用本项目时，务必遵守所在国家/地区的法律法规以及对应数据源的使用条款。本项目对由于滥用第三方接口导致的 IP 封禁或版权纠纷不承担任何责任。
+---
+
 ## 📜 许可证 | License
 
 本项目采用 [MIT License](https://www.google.com/search?q=LICENSE) 开源许可证。
