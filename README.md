@@ -109,18 +109,14 @@ LOG_RETENTION_DAYS=7
   opkg update
   opkg install coreutils-timeout
 
-```
-
----
-
 
 ### 2. Cron 定时任务无法按时触发？
 
-* 请确保 OpenWrt 的 `cron` 服务已开启并随系统自启：
+  * 请确保 OpenWrt 的 `cron` 服务已开启并随系统自启：
 
   ```bash
-/etc/init.d/cron enable
-/etc/init.d/cron start
+  /etc/init.d/cron enable
+  /etc/init.d/cron start
 
 ```
 
