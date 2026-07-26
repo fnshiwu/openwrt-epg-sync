@@ -97,6 +97,33 @@ LOG_RETENTION_DAYS=7
 
 ---
 
+
+## 🛠️ 常见问题与可选依赖 | Troubleshooting & Optional Dependencies
+
+### 1. 提示 `当前固件未内置 timeout，直接执行 Python...`
+
+* **原因**：OpenWrt 默认的 BusyBox 可能未内置 `timeout` 命令。虽然脚本可以正常运行，但在无人值守（Cron）模式下，若遇到异常文件导致 Python 解析卡死，缺乏超时保护可能会占用系统资源。
+* **解决方法**：建议安装 `coreutils-timeout` 以启用进程超时保护：
+
+  ```bash
+  opkg update
+  opkg install coreutils-timeout
+
+```
+
+---
+
+### 2. Cron 定时任务无法按时触发？
+
+* 请确保 OpenWrt 的 `cron` 服务已开启并随系统自启：
+```bash
+/etc/init.d/cron enable
+/etc/init.d/cron start
+
+```
+
+---
+
 ## 📜 许可证 | License
 
 本项目采用 [MIT License](https://www.google.com/search?q=LICENSE) 开源许可证。
