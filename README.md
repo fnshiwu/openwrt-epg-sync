@@ -113,10 +113,12 @@ LOG_RETENTION_DAYS=7
 
 ---
 
+
 ### 2. Cron 定时任务无法按时触发？
 
 * 请确保 OpenWrt 的 `cron` 服务已开启并随系统自启：
-```bash
+
+  ```bash
 /etc/init.d/cron enable
 /etc/init.d/cron start
 
